@@ -20,3 +20,17 @@ int main() {
         cout << "Three\n";
     }
 }
+
+// example
+// int N;
+// int main() {
+//     cin >> N;
+//     set<char> s;
+//     rep(i, 0, N) {
+//         char c; cin >> c;
+//         s.insert(c);
+//     }
+
+//     if (s.size() == 3) printf("Three\n");
+//     else printf("Four\n");
+// }

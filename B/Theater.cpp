@@ -5,11 +5,11 @@ int main() {
     int group;
     cin >> group;
 
-    int num;
+    int num = 0;
     for (int i = 0; i < group; i++) {
         int seat_from, seat_to;
         cin >> seat_from >> seat_to;
-        num += seat_to - seat_from + 1;
+        num += + seat_to - seat_from + 1;
     }
-    cout << num;
+    cout << num << "\n";
 }
