@@ -2,12 +2,15 @@
 using namespace std;
 
 int main() {
-    int A, B, count;
+    int A, B;
     cin >> A >> B;
-
-    for(int i = 0; i < B - A; i++) {
-
-        count ++;
+    int count = 0;
+    for(int i = A; i <= B; i++) {
+        int s = i % 10, t = i / 10000 % 10;
+        int u = i /10 % 10, v = i / 1000 % 10;
+        if(s == t && u == v) {
+            count ++;
+        }
     }
 
     cout << count << "\n";
