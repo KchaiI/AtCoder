@@ -10,18 +10,11 @@ int main() {
         int count = 0;
         int number;
         cin >> number;
-        for(int j = 0; j < number; j++) {
-            if(number % 2 == 0) {
-                number = number / 2;
-                count++;
-            } else {
-                break;
-            }
+        while(number % 2 == 0) {
+            number /= 2;
+            count++;
         }
-
-        if(count <= min_count) {
-            min_count = count;
-        }
+        min_count = min(min_count, count);
     }
     cout << min_count << "\n";
 }
