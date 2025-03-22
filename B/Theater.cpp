@@ -11,5 +11,5 @@ int main() {
         cin >> seat_from >> seat_to;
         num += + seat_to - seat_from + 1;
     }
-    cout << num << "\n";
+    cout << num << endl;
 }

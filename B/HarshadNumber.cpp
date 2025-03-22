@@ -12,8 +12,8 @@ int main() {
         n /= 10;
     }
     if (N % harshad == 0) {
-        cout << "Yes\n";
+        cout << "Yes" << endl;
     } else {
-        cout << "No\n";
+        cout << "No" << endl;
     }
 }

@@ -16,5 +16,5 @@ int main() {
         }
         min_count = min(min_count, count);
     }
-    cout << min_count << "\n";
+    cout << min_count << endl;
 }

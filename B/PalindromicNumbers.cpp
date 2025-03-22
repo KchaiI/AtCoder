@@ -13,5 +13,5 @@ int main() {
         }
     }
 
-    cout << count << "\n";
+    cout << count << endl;
 }

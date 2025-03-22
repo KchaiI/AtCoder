@@ -15,9 +15,9 @@ int main() {
     }
 
     if (check) {
-        cout << "Four\n";
+        cout << "Four" << endl;
     } else {
-        cout << "Three\n";
+        cout << "Three" << endl;
     }
 }
 
