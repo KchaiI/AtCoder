@@ -5,29 +5,23 @@ int main() {
     int N;
     cin >> N;
 
-    int count = 0;
+    int min_count = INT_MAX;
     for(int i = 0; i < N; i++) {
-        int brack_board;
-        cin >> brack_board;
-        int box = brack_board;
-        if(box % 2 == 0) {
-            count++;
-            box = box / 2;
-        } else {
-            break;
+        int count = 0;
+        int number;
+        cin >> number;
+        for(int j = 0; j < number; j++) {
+            if(number % 2 == 0) {
+                number = number / 2;
+                count++;
+            } else {
+                break;
+            }
         }
 
-
-
-        // for(int j = 0; j < brack_board; j++) {
-        //     int box = brack_board;
-        //     if(box % 2 == 0) {
-        //         count ++;
-        //         box = box / 2;
-        //         cout << box;
-        //     }else {
-        //         break;
-        //     }
-        // }
+        if(count <= min_count) {
+            min_count = count;
+        }
     }
+    cout << min_count << "\n";
 }
