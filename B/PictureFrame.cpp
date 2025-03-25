@@ -6,13 +6,27 @@ int main() {
     cin >> h >> w;
     vector<vector<char>> inside(h, vector<char>(w));
 
-    for(int i = 0; i << h; i++) {
-        for(int j = 0; j << w; j++) {
-            char n;
-            cin >> n;
-            inside.at(i).at(j) = n;
+    for(int i = 0; i < h; i++) {
+        for(int j = 0; j < w; j++) {
+            cin >> inside[i][j];
         }
     }
 
-    cout << inside << endl;
+    for(int i = 0; i < w + 2; i++){
+        cout << '#';
+    }
+    cout << endl;
+
+    for(int i = 0; i < h; i++) {
+        cout << '#';
+        for(int j = 0; j < w; j++) {
+            cout << inside[i][j];
+        }
+        cout << '#' << endl;
+    }
+    
+    for(int i = 0; i < w + 2; i++){
+        cout << '#';
+    }
+    cout << endl;
 }
