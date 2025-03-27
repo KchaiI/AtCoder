@@ -6,10 +6,13 @@ int main() {
     cin >> n >> m;
 
     vector<int> city(n);
-    for(int i = 0; i << m; i++) {
+    for(int i = 0; i < m; i++) {
         int a, b;
         cin >> a >> b;
-        
-
+        city[a - 1]++;
+        city[b - 1]++;
+    }
+    for(int i = 0; i < n; i++) {
+        cout << city[i] << endl;
     }
 }
