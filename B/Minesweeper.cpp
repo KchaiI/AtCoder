@@ -11,14 +11,7 @@ int main() {
             char n;
             cin >> n;
             if(n == '#') {
-                stage.at(i).at(j + 1)++;
-                stage.at(i).at(j - 1)++;
-                stage.at(i - 1).at(j - 1);
-                stage.at(i - 1).at(j);
-                stage.at(i - 1).at(j + 1);
-                stage.at(i + 1).at(j - 1);
-                stage.at(i + 1).at(j);
-                stage.at(i + 1).at(j + 1);
+                
             }
         }
     }
