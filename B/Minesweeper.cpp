@@ -16,11 +16,25 @@ int main() {
         }
     }
 
+    //爆弾の個数を数える
     for(int i = 0; i < h; i++) {
         for(int j = 0; j < w; j++) {
-            
-        }
-    }
+            for(int d = 0; d < 8; d++) {
+                int ni = i + dx[d];
+                int nj = j + dy[d];
 
-    cout << stage << endl;
+                if(0 <= ni && ni < h && 0 <= nj && nj < w) {
+                    if(stage[ni][nj] == '#') {
+                        answer[i][j]++;
+                    }
+                }
+            }
+            if(stage[i][j] == '#') {
+                cout << '#';
+            } else {
+                cout << answer[i][j];
+            }
+        }
+        cout << endl;
+    }
 }
