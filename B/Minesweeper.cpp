@@ -7,6 +7,7 @@ int main() {
     vector<vector<int>> answer(h, vector<int>(w));
     vector<vector<char>> stage(h, vector<char>(w));
 
+    // 周りの爆弾を確認
     int dx[8] = {-1, -1, -1, 0, 0, 1, 1, 1};
     int dy[8] = {-1, 0, 1, -1, 1, -1, 0, 1};
     
@@ -16,9 +17,11 @@ int main() {
         }
     }
 
-    //爆弾の個数を数える
+    // 爆弾の個数を数える
     for(int i = 0; i < h; i++) {
         for(int j = 0; j < w; j++) {
+
+            // 配列の外側を確認しないように
             for(int d = 0; d < 8; d++) {
                 int ni = i + dx[d];
                 int nj = j + dy[d];
