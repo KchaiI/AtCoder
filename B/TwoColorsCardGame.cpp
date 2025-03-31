@@ -16,8 +16,18 @@ int main() {
     }
 
     for(int i = 0; i < n; i++) {
+        int n = 0, red_card_count = 0, blue_card_count = 0;
         for(int j = 0; j < m; j++) {
-            
+            if(si[i] == si[i + n]) {
+                red_card_count++;
+            }
+
+            if(ti[m] == ti[m + n]) {
+                blue_card_count++;
+            }
+            n++;
+
+            if(red_card_count > blue_card_count)
         }
     }
 }
