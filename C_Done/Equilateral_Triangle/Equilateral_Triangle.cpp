@@ -65,7 +65,7 @@ int main() {
 //     rep(i, N) cnt[x[i]] ++;
 
 //     // 正三角形ができない時
-//     if(L / 3 != 0) {
+//     if(L % 3 != 0) {
 //         cout << 0 << endl;
 //         return 0;
 //     }
