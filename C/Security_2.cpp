@@ -4,5 +4,4 @@ using namespace sa_handler
 using ll = long long;
 
 int main() {
-    
 }
