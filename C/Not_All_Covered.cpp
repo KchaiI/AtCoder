@@ -54,7 +54,7 @@ int main() {
     // 累積和
     rep(i, n) s[i + 1] += s[i];
 
-    int ans = *min_elemnt(s.begin(), s.begin() + n);
+    int ans = *min_element(s.begin(), s.begin() + n);
     cout << ans << endl;
     return 0;
 }
