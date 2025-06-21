@@ -7,8 +7,14 @@ int main() {
     int n;
     cin >> n;
     vector<int> distance(n);
-    rep(i, n) cin >> distance[i];
+    rep(i, n - 1) cin >> distance[i];
     
-    int size = 0;
-    rep(i, )
+    rep(i, n - 1) {
+        int size = 0;
+        rep(j, n - 1 - i) {
+            size += distance[j + i];
+            cout << size << " ";
+        }
+        cout << endl;
+    }
 }
